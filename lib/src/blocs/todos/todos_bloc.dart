@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
-import 'package:todo_app_flutter/src/blocs/todos_events.dart';
-import 'package:todo_app_flutter/src/blocs/todos_state.dart';
+import 'package:todo_app_flutter/src/blocs/todos/todos_events.dart';
+import 'package:todo_app_flutter/src/blocs/todos/todos_state.dart';
 import 'package:todo_app_flutter/src/models/todo_model.dart';
 import 'package:todos_repository_simple/todos_repository_simple.dart';
 
