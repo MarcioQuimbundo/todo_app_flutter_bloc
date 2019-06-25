@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 import 'package:todo_app_flutter/src/ui/widgets/extra_actions.dart';
 import 'package:todo_app_flutter/src/ui/widgets/filter_button.dart';
+import 'package:todo_app_flutter/src/ui/widgets/tab_selector.dart';
 import "package:todos_app_core/todos_app_core.dart";
 import "package:flutter_bloc/flutter_bloc.dart";
 import "package:todo_app_flutter/src/blocs/blocs.dart";
@@ -33,7 +34,7 @@ class HomeScreen extends StatelessWidget {
           ),
           bottomNavigationBar: TabSelector(
             activeTab: activeTab,
-            onTabSelect: (tab) => tabBloc.dispatch(UpdateTab(tab))
+            onTabSelected: (tab) => tabBloc.dispatch(UpdateTab(tab))
           ),
         );
       },
