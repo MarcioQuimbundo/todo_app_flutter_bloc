@@ -29,7 +29,7 @@ class TabSelector extends StatelessWidget {
             title: Text(tab == AppTab.stats
                 ? ArchSampleLocalizations.of(context).stats
                 : ArchSampleLocalizations.of(context).todos));
-      }),
+      }).toList(),
     );
   }
 }
