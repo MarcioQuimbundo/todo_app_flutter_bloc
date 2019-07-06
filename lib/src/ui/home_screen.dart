@@ -2,6 +2,7 @@ import "package:flutter/material.dart";
 import 'package:todo_app_flutter/src/ui/widgets/extra_actions.dart';
 import 'package:todo_app_flutter/src/ui/widgets/filter_button.dart';
 import 'package:todo_app_flutter/src/ui/widgets/filtered_todos.dart';
+import 'package:todo_app_flutter/src/ui/widgets/stats.dart';
 import 'package:todo_app_flutter/src/ui/widgets/tab_selector.dart';
 import "package:todos_app_core/todos_app_core.dart";
 import "package:flutter_bloc/flutter_bloc.dart";
@@ -24,7 +25,7 @@ class HomeScreen extends StatelessWidget {
               ExtraActions(),
             ],
           ),
-          body: activeTab == Apptab.todos ? FilteredTodos() : Stats(),
+          body: activeTab == AppTab.todos ? FilteredTodos() : Stats(),
           floatingActionButton: FloatingActionButton(
             key: ArchSampleKeys.addTodoFab,
             onPressed: () {
